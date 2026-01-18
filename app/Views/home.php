@@ -3,7 +3,7 @@
 <title>EO - Home</title>
 <section class="section">
     <div class="section-header">
-        <h1>Dashbord</h1>
+        <span>Dashboard</span>
     </div>
     
     <div class="section-body">

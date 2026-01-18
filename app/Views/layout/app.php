@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <?= $this->renderSection('title') ?>
 
   <!-- General CSS Files -->
-  <link rel="stylesheet" href="<?=base_url('template/dist/assets/modules/bootstrap/css/bootstrap.min.css')?>">
-  <link rel="stylesheet" href="<?=base_url('template/dist/assets/modules/fontawesome/css/all.min.css')?>">
-
-  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="<?= base_url('template/dist/assets/modules/bootstrap/css/bootstrap.min.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('template/dist/assets/modules/fontawesome/css/all.min.css') ?>">
 
   <!-- Template CSS -->
-  <link rel="stylesheet" href="<?=base_url('template/dist/assets/css/style.css')?>">
-  <link rel="stylesheet" href="<?=base_url('template/dist/assets/css/components.css')?>">
-<!-- Start GA -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="stylesheet" href="<?= base_url('template/dist/assets/css/style.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('template/dist/assets/css/components.css') ?>">
+  <!-- Start GA -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-94034622-3');
-</script>
-<!-- /END GA --></head>
+    gtag('config', 'UA-94034622-3');
+  </script>
+  <!-- /END GA -->
+
+  <!-- SweetAlert Link -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
 
 <body>
   <div id="app">
@@ -33,7 +36,8 @@
         <form class="form-inline mr-auto">
           <ul class="navbar-nav mr-3">
             <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
+                  class="fas fa-search"></i></a></li>
           </ul>
           <div class="search-element">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
@@ -44,7 +48,8 @@
           </div>
         </form>
         <ul class="navbar-nav navbar-right">
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right">
               <div class="dropdown-header">Messages
                 <div class="float-right">
@@ -54,7 +59,8 @@
               <div class="dropdown-list-content dropdown-list-message">
                 <a href="#" class="dropdown-item dropdown-item-unread">
                   <div class="dropdown-item-avatar">
-                    <img alt="image" src="<?=base_url()?>/template/dist/assets/img/avatar/avatar-1.png" class="rounded-circle">
+                    <img alt="image" src="<?= base_url() ?>/template/dist/assets/img/avatar/avatar-1.png"
+                      class="rounded-circle">
                     <div class="is-online"></div>
                   </div>
                   <div class="dropdown-item-desc">
@@ -65,7 +71,8 @@
                 </a>
                 <a href="#" class="dropdown-item dropdown-item-unread">
                   <div class="dropdown-item-avatar">
-                    <img alt="image" src="<?=base_url()?>/template/dist/assets/img/avatar/avatar-2.png" class="rounded-circle">
+                    <img alt="image" src="<?= base_url() ?>/template/dist/assets/img/avatar/avatar-2.png"
+                      class="rounded-circle">
                   </div>
                   <div class="dropdown-item-desc">
                     <b>Dedik Sugiharto</b>
@@ -75,7 +82,8 @@
                 </a>
                 <a href="#" class="dropdown-item dropdown-item-unread">
                   <div class="dropdown-item-avatar">
-                    <img alt="image" src="<?=base_url()?>/template/dist/assets/img/avatar/avatar-3.png" class="rounded-circle">
+                    <img alt="image" src="<?= base_url() ?>/template/dist/assets/img/avatar/avatar-3.png"
+                      class="rounded-circle">
                     <div class="is-online"></div>
                   </div>
                   <div class="dropdown-item-desc">
@@ -86,7 +94,8 @@
                 </a>
                 <a href="#" class="dropdown-item">
                   <div class="dropdown-item-avatar">
-                    <img alt="image" src="<?=base_url()?>/template/dist/assets/img/avatar/avatar-4.png" class="rounded-circle">
+                    <img alt="image" src="<?= base_url() ?>/template/dist/assets/img/avatar/avatar-4.png"
+                      class="rounded-circle">
                   </div>
                   <div class="dropdown-item-desc">
                     <b>Ardian Rahardiansyah</b>
@@ -96,7 +105,8 @@
                 </a>
                 <a href="#" class="dropdown-item">
                   <div class="dropdown-item-avatar">
-                    <img alt="image" src="<?=base_url()?>/template/dist/assets/img/avatar/avatar-5.png" class="rounded-circle">
+                    <img alt="image" src="<?= base_url() ?>/template/dist/assets/img/avatar/avatar-5.png"
+                      class="rounded-circle">
                   </div>
                   <div class="dropdown-item-desc">
                     <b>Alfa Zulkarnain</b>
@@ -110,7 +120,8 @@
               </div>
             </div>
           </li>
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right">
               <div class="dropdown-header">Notifications
                 <div class="float-right">
@@ -169,9 +180,12 @@
               </div>
             </div>
           </li>
-          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            <img alt="image" src="<?=base_url()?>/template/dist/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div></a>
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+              <img alt="image" src="<?= base_url() ?>/template/dist/assets/img/avatar/avatar-1.png"
+                class="rounded-circle mr-1">
+              <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
+            </a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Logged in 5 min ago</div>
               <a href="features-profile.html" class="dropdown-item has-icon">
@@ -206,35 +220,58 @@
 
       <!-- Main Content -->
       <div class="main-content">
-        <?= $this->renderSection('content'); ?>  
+        <?php if (session()->getFlashdata('success')): ?>
+          <script>
+            Swal.fire({
+              icon: 'success',
+              title: 'Success',
+              text: '<?= session()->getFlashdata('success') ?>',
+              timer: 1000,
+              showConfirmButton: false
+            });
+          </script>
+        <?php endif ?>
+
+        <?php if (session()->getFlashdata('error')): ?>
+          <script>
+            Swal.fire({
+              icon: 'error',
+              title: 'Failed',
+              text: '<?= session()->getFlashdata('error') ?>'
+            });
+          </script>
+        <?php endif ?>
+        <?= $this->renderSection('content'); ?>
       </div>
-      
+
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2026 <div class="bullet"></div> Develop By <a href="https://github.com/mhmmdrivaldhi">Muhammad Rivaldhi</a>
+          Copyright &copy; 2026 <div class="bullet"></div> Develop By <a
+            href="https://github.com/mhmmdrivaldhi">Muhammad Rivaldhi</a>
         </div>
         <div class="footer-right">
-          
+
         </div>
       </footer>
     </div>
   </div>
 
   <!-- General JS Scripts -->
-  <script src="<?=base_url('template/dist/assets/modules/jquery.min.js')?>"></script>
-  <script src="<?=base_url('template/dist/assets/modules/popper.js')?>"></script>
-  <script src="<?=base_url('template/dist/assets/modules/tooltip.js')?>"></script>
-  <script src="<?=base_url('template/dist/assets/modules/bootstrap/js/bootstrap.min.js')?>"></script>
-  <script src="<?=base_url('template/dist/assets/modules/nicescroll/jquery.nicescroll.min.js')?>"></script>
-  <script src="<?=base_url('template/dist/assets/modules/moment.min.js')?>"></script>
-  <script src="<?=base_url('template/dist/assets/js/stisla.js')?>"></script>
-  
+  <script src="<?= base_url('template/dist/assets/modules/jquery.min.js') ?>"></script>
+  <script src="<?= base_url('template/dist/assets/modules/popper.js') ?>"></script>
+  <script src="<?= base_url('template/dist/assets/modules/tooltip.js') ?>"></script>
+  <script src="<?= base_url('template/dist/assets/modules/bootstrap/js/bootstrap.min.js') ?>"></script>
+  <script src="<?= base_url('template/dist/assets/modules/nicescroll/jquery.nicescroll.min.js') ?>"></script>
+  <script src="<?= base_url('template/dist/assets/modules/moment.min.js') ?>"></script>
+  <script src="<?= base_url('template/dist/assets/js/stisla.js') ?>"></script>
+
   <!-- JS Libraies -->
 
   <!-- Page Specific JS File -->
-  
+
   <!-- Template JS File -->
-  <script src="<?=base_url('template/dist/assets/js/scripts.js')?>"></script>
-  <script src="<?=base_url('template/dist/assets/js/custom.js')?>"></script>
+  <script src="<?= base_url('template/dist/assets/js/scripts.js') ?>"></script>
+  <script src="<?= base_url('template/dist/assets/js/custom.js') ?>"></script>
 </body>
+
 </html>
