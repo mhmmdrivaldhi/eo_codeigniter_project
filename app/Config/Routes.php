@@ -18,3 +18,5 @@ $routes->get('create-db', function () {
 $routes->addRedirect('/', 'home');
 $routes->get('home', 'Home::index');
 $routes->get('event', 'EventController::index');
+$routes->get('event/create', 'EventController::create');
+$routes->post('event', 'EventController::store');
